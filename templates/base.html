@@ -6,67 +6,58 @@
         <title>{% block title %}IEI Orion{% endblock %}</title>
         
         <!-- Default CSS (optional) -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     
         <!-- Page-Specific CSS -->
         {% block styles %}{% endblock %}
     </head>
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}IEI Orion{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-</head>
 
-<body>
+    <body>
+    <header>
+        <a href="{{ url_for('events') }}" class="logo-link">
+            <img src="{{ url_for('static', filename='images/IEI.png') }}" class="logo" alt="IEI Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('events') }}">Events</a></li>
+                <li><a href="{{ url_for('osr') }}">OSR</a></li>
+                <li><a href="{{ url_for('sponsors') }}">Sponsors</a></li>
+                <li><a href="{{ url_for('team') }}">Team</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <a href="{{ url_for('events') }}" class="logo-link">
-        <img src="{{ url_for('static', filename='images/IEI.png') }}" class="logo" alt="IEI Logo">
-    </a>
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('events') }}">Events</a></li>
-            <li><a href="{{ url_for('osr') }}">OSR</a></li>
-            <li><a href="{{ url_for('sponsors') }}">Sponsors</a></li>
-            <li><a href="{{ url_for('team') }}">Team</a></li>
-            <li><a href="{{ url_for('about') }}">About Us</a></li>
-            <li><a href="{{ url_for('contact') }}">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <main>
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
 
-<main>
-    <div class="container">
-        {% block content %}{% endblock %}
-    </div>
-</main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 IEI Orion. All rights reserved.</p>
+        </div>
+    </footer>
 
-<footer class="footer">
-    <div class="container">
-        <p>&copy; 2025 IEI Orion. All rights reserved.</p>
-    </div>
-</footer>
+    <!-- <script src="{{ url_for('static', filename='js/index.js')}}"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- <script src="{{ url_for('static', filename='js/index.js')}}"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+    </script> -->
 
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        loop: true,
-    });
-</script> -->
-
-</body>
+    </body>
 </html>
