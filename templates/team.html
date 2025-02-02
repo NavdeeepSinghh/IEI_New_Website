@@ -7,17 +7,22 @@
 {% endblock %}
 
 {% block content %}
-<body>
     <div class="container">
         <h1 class="title">TEAM CREW</h1>
         <div class="team-section">
             <div class="team-box">
-                <div class="image"></div>
+                <div class="image">
+                    <!-- style="background-image: url('{{ url_for('static', filename='images/tech_team.jpg') }}');" -->
+                </div>
                 <p class="team-name">Tech Team</p>
             </div>
             <div class="team-box">
-                <div class="image"></div>
+                <div class="image">
+                    <!-- style="background-image: url('{{ url_for('static', filename='images/design_team.jpg') }}');"> -->
+                    
+                </div>
                 <p class="team-name">Design Team</p>
             </div>
-</body>
+        </div>
+    </div>
 {% endblock %}

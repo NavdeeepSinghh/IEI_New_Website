@@ -11,31 +11,33 @@
 {% endblock %}
 
 {% block content %}
-<body>
-    <header>
-        <div class="logo">
-            <img src="{{ url_for('static', filename='images/IEI.png') }}" alt="iei.logo" height="150px" class="ieilogo">
-        </div>
-           <h1>INSTITUTION OF <br>ENGINEERS<br>INDIA </h1>
+<header>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/IEI.png') }}" alt="iei.logo" height="150px" class="ieilogo">
+    </div>
+    <h1>INSTITUTION OF <br>ENGINEERS<br>INDIA </h1>
 </header>
 
 <main>
-        <div class="text">
-CONNECT<br>TO WHAT<br>COUNTS
-         </div>
-         <div class="social">
-            <div class="emaildetails">
-              <a href="https://mail.google.com" target="_blank"><i class="fa-regular fa-envelope" style="font-size: 95px;"></i></a>
-              <a href="https://mail.google.com" target="_blank" id="details">orion@thapar.edu</a>
-              </div>
-              <div class="instadetails">
-                <a href="https://www.instagram.com/oriontiet/?utm_source=ig_web_button_share_sheet#" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 95px;"></i></a>
-                <a href="https://www.instagram.com/oriontiet/?utm_source=ig_web_button_share_sheet#" target="_blank" id="details">oriontiet</a>
-                </div>
+    <div class="text">
+        CONNECT<br>TO WHAT<br>COUNTS
     </div>
-    </main>
+    <div class="social">
+        <div class="emaildetails">
+            <a href="https://mail.google.com" target="_blank"><i class="fa-regular fa-envelope" style="font-size: 95px;"></i></a>
+            <a href="https://mail.google.com" target="_blank" id="details">orion@thapar.edu</a>
+        </div>
+        <div class="instadetails">
+            <a href="https://www.instagram.com/oriontiet/?utm_source=ig_web_button_share_sheet#" target="_blank"><i class="fa-brands fa-instagram" style="font-size: 95px;"></i></a>
+            <a href="https://www.instagram.com/oriontiet/?utm_source=ig_web_button_share_sheet#" target="_blank" id="details">oriontiet</a>
+        </div>
+    </div>
+</main>
+
+<footer class="contact-footer">
+    <p>&copy; 2025 IEI Orion. All rights reserved.</p>
+</footer>
    
-</body>
 {% endblock %}
 
 <!---JINJA TEMPLATE-->
