@@ -18,7 +18,11 @@ click_stats = {
 #     click_stats['home'] +=1
 #     return render_template('home.html')  
 
-#@app.route('/events')
+@app.route('/')
+def home():
+    return redirect(url_for('events'))  # Redirects to /events
+
+@app.route('/events')
 def events():
     click_stats['events'] += 1
     return render_template('events.html')
@@ -27,6 +31,8 @@ def events():
 def osr():
     click_stats['osr'] += 1
     return render_template('osr.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
