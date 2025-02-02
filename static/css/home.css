@@ -1,0 +1,95 @@
+/* styles.css (updated) */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    min-height: 100vh;
+    background-color: #15002F;
+    position: relative;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('network-bg.jpg') center/100% 100% no-repeat;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    padding-left: 5%; /* reduced from 10% */
+    max-width: 60%; /* increased from 50% */
+}
+
+h1 {
+    font-size: clamp(48px, 6vw, 96px); /* responsive font size */
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 1.1; /* reduced from 1.2 */
+}
+
+.subtitle {
+    font-size: clamp(24px, 2.5vw, 36px); /* responsive font size */
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff;
+    text-align: left;
+    margin-bottom: 30px; /* reduced from 40px */
+}
+
+.connect-btn {
+    background-color: #ff00ff;
+    color: white;
+    font-size: clamp(18px, 1.8vw, 26px); /* responsive font size */
+    padding: 12px 25px; /* reduced padding */
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px #ff00ff;
+    transition: 0.3s;
+    align-self: flex-start;
+}
+
+.connect-btn:hover {
+    background-color: white;
+    color: #ff00ff;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-height: 700px) {
+    .container {
+        padding-left: 3%;
+    }
+    
+    h1 {
+        margin-bottom: 20px;
+    }
+    
+    .subtitle {
+        margin-bottom: 20px;
+    }
+    
+    .connect-btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Media query for very small screens */
+@media screen and (max-height: 500px) {
+    .container {
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+}

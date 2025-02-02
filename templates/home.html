@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Join the Journey{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Join The Journey Here</h1>
+        <p class="subtitle">UNTANGLE THE WEB WITH US</p>
+        <button class="connect-btn">Connect Here</button>
+    </div>
+</body>
+{% endblock %}

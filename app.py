@@ -13,7 +13,7 @@ click_stats = {
     'contact': 0
 }
 
-@app.route('/')
+# @app.route('/')
 # def home():
 #     click_stats['home'] +=1
 #     return render_template('home.html')  
@@ -32,7 +32,25 @@ def osr():
     click_stats['osr'] += 1
     return render_template('osr.html')
 
+@app.route('/sponsors')
+def sponsors():
+    click_stats['sponsors'] += 1
+    return render_template('sponsors.html')
 
+@app.route('/team')
+def team():
+    click_stats['team'] += 1
+    return render_template('team.html')
+
+@app.route('/about')
+def about():
+    click_stats['about'] += 1
+    return render_template('about_us.html')
+
+@app.route('/contact')
+def contact():
+    click_stats['contact'] += 1
+    return render_template('contact.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

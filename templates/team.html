@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Team Crew{% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}">
+{% endblock %}
+
+{% block content %}
+<body>
+    <div class="container">
+        <h1 class="title">TEAM CREW</h1>
+        <div class="team-section">
+            <div class="team-box">
+                <div class="image"></div>
+                <p class="team-name">Tech Team</p>
+            </div>
+            <div class="team-box">
+                <div class="image"></div>
+                <p class="team-name">Design Team</p>
+            </div>
+</body>
+{% endblock %}
