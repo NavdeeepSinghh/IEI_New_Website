@@ -13,14 +13,10 @@ click_stats = {
     'contact': 0
 }
 
-# @app.route('/')
-# def home():
-#     click_stats['home'] +=1
-#     return render_template('home.html')  
-
 @app.route('/')
 def home():
-    return redirect(url_for('events'))  # Redirects to /events
+    click_stats['home'] +=1
+    return render_template('home.html')  
 
 @app.route('/events')
 def events():
@@ -50,7 +46,7 @@ def about():
 @app.route('/contact')
 def contact():
     click_stats['contact'] += 1
-    return render_template('contact.html')
+    return render_template('contactus.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
