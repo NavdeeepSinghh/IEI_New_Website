@@ -2,14 +2,46 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: 'Orbitron', sans-serif;
     color: white;
     min-height: 100vh;
     background-color: #15002F;
     position: relative;
 }
+nav {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+}
 
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff; /* White color for text */
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff6600; /* Change color on hover */
+}
+.logo{
+    right: 3rem;
+    position: relative;
+    height: 14rem;
+}
 .background {
     position: fixed;
     top: 0;
