@@ -2,14 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Orbitron', sans-serif;
     color: white;
     min-height: 100vh;
-    background-color: #15002F;
-    position: relative;
+    /* background-color: #15002F; */
+    /* position: relative; */
 }
 nav {
-    position: relative;
+    /* position: relative; */
     z-index: 2;
     margin: 0 auto;
 }
@@ -37,12 +36,12 @@ nav a {
 nav a:hover {
     color: #ff6600; /* Change color on hover */
 }
-.logo{
+/* .logo{
     right: 3rem;
     position: relative;
     height: 14rem;
-}
-.background {
+} */
+/* .background {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,9 +49,9 @@ nav a:hover {
     bottom: 0;
     background: url('network-bg.jpg') center/100% 100% no-repeat;
     z-index: -1;
-}
+} */
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -60,8 +59,8 @@ nav a:hover {
     height: 100vh;
     position: relative;
     padding-left: 5%; /* reduced from 10% */
-    max-width: 60%; /* increased from 50% */
-}
+    /* max-width: 60%; /* increased from 50% */
+
 
 h1 {
     font-size: clamp(48px, 6vw, 96px); /* responsive font size */

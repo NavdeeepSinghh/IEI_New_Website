@@ -11,21 +11,20 @@
 {% endblock %}
 
 {% block content %}
-    <header class = "about-header">
-        <div class="text">
-            <h1>ABOUT US</h1>
-            <div class="mainimg">
-                <img src="{{ url_for('static', filename = 'images/aboutme.png') }}" alt="about_us" height="600px" width="600px">
-            </div>
+<header>
+    <div class="text">
+        ABOUT
+        US<br>
+        <div class="mainimg">
+            <img src="{{ url_for('static', filename='images/aboutme.png') }}" alt="about_us" height="500px" width="600px">
         </div>
-    </header>
-    <section class = "about-content">
-        <div class="content-container">
-            <p class = "about-text">hello Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatibus debitis voluptatem hic provident harum illum rerum rem porro. Nostrum id ducimus modi aliquam esse eaque voluptas maxime voluptatum commodi. Voluptatibus explicabo iusto sit similique maxime voluptas eius natus quis, accusantium itaque ipsum pariatur culpa sequi, quaerat at tempore. Dolorem reprehenderit laboriosam hic, consequuntur quam provident repellendus sequi. Quam, minus. Error quae amet quos repellat sit! Ut eveniet aperiam adipisci ipsum temporibus impedit nesciunt voluptates. Voluptatibus error, nostrum nemo quos harum necessitatibus blanditiis, praesentium mollitia earum voluptate consectetur officia aut? Reprehenderit ea architecto laudantium sint et doloribus ad quam eius.</p>
-        </div> 
-        <div class="imgage-container">
-            <img src="{{ url_for('static', filename = 'images/image3.png') }}" alt="iei" height="650px" width="500px"> 
-        </div>
-    </section>
+    </div>
+    <div class="contentcontainer">
+        <div class="content">
+            The Institution of Engineers (India) [IEI] is a statutory body to promote and advance engineering and technology, established in 1920 and incorporated by Royal Charter in 1935. It is the largest multi-disciplinary professional body of engineers encompassing 15 engineering disciplines with a membership of more than 820 thousand, serving the nation for more than 9 decades. The IEI has its headquarters located in Kolkata with a national presence through more than 100 Centres and several Overseas Chapters, Foras, and Organs. IEI (Institution of Engineers India) Thapar Chapter is a technical society of Thapar University which organizes various workshops, technical exams, and lecture series by industry experts. This society is open for all technical branches of engineering.
+    </div> 
+</div>
+</header>
+   
 
 {% endblock %}
